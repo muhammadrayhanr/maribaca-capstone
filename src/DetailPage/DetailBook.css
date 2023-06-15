@@ -1,0 +1,30 @@
+.book-synopsis {
+  text-align: justify;
+}
+.book-cover {
+  object-fit: contain;
+}
+.btn-bookmark {
+  background: white !important;
+  color: #db3635 !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+}
+.btn-bookmarked {
+  background: #db3635 !important;
+  color: white !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+}
+.btn-back {
+  background: white !important;
+  color: #db3635 !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+}
+.btn-read-book {
+  background: #db3635 !important;
+  color: white !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+}

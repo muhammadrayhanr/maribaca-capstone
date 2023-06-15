@@ -1,0 +1,68 @@
+.container-login {
+  margin: 0 70px;
+}
+.col-vector {
+  background: #f2ad73;
+}
+.logo {
+  color: #f2ad73;
+}
+.logo:hover {
+  color: #f2ad73;
+}
+.logo span {
+  color: #db3635;
+}
+.forget-password {
+  color: #db3635 !important;
+  background: transparent !important;
+  border: none !important;
+}
+.btn-search-user {
+  background-color: #db3635 !important;
+  color: white !important;
+  border: 2px solid #db3635 !important;
+}
+.btn-login-form {
+  background-color: #db3635 !important;
+  color: white !important;
+  border: 2px solid #db3635 !important;
+}
+.btn-register-form {
+  background-color: #db3635 !important;
+  color: white !important;
+  border: 2px solid #db3635 !important;
+}
+.btn-login-form:hover {
+  background-color: white !important;
+  color: #db3635 !important;
+  border: 2px solid #db3635 !important;
+  transition: 0.5s;
+}
+.btn-register-form:hover {
+  background-color: white !important;
+  color: #db3635 !important;
+  border: 2px solid #db3635 !important;
+  transition: 0.5s;
+}
+.btn-login-google {
+  background-color: white !important;
+  color: #db3635 !important;
+  border: 2px solid #8b8f96 !important;
+}
+.btn-login-google:hover {
+  background-color: rgb(231, 225, 225) !important;
+  color: #db3635 !important;
+  border: 2px solid #8b8f96 !important;
+  transition: 0.5s;
+}
+.text-regist {
+  color: #90949a !important;
+}
+.text-regist a {
+  color: #db3635 !important;
+}
+
+.fixed {
+  position: fixed;
+}

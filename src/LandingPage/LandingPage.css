@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap');
+
+/* Jumbotron */
+header {
+  background: #263238;
+  border-end-end-radius: 20px;
+  border-end-start-radius: 20px;
+}
+.quotes {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+.quotes span {
+  color: #db3635;
+}
+.quotes2 {
+  font-family: 'Open Sans', sans-serif;
+  color: whitesmoke;
+}
+.btn-read {
+  background: #db3635 !important;
+  color: #fff !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+}
+.btn-read:hover {
+  background: #fff !important;
+  color: #db3635 !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+  transition: 0.5s;
+}
+
+/* main {
+  overflow-y: scroll;
+} */
+/* About */
+.about {
+  font-family: 'Open Sans', sans-serif;
+}
+.about-logo {
+  font-family: 'Poppins', sans-serif;
+  color: #f2ad73;
+}
+.about-logo span {
+  color: #db3635;
+}
+.heading span {
+  color: #db3635;
+}
+.little-logo {
+  color: #f2ad73;
+}
+.little-logo span {
+  color: #db3635;
+}
+.btn-socmed {
+  background: white !important;
+  color: #db3635 !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+}
+.btn-socmed:hover {
+  background: #db3635 !important;
+  color: white !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+  transition: 0.5s;
+}
+.detail-about {
+  text-align: justify;
+}
+/* Services */
+.strip {
+  display: inline-block;
+  width: 45px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+.card {
+  background: #263238 !important;
+  color: #fff;
+}
+/* FAQ */
+.accordion-button {
+  background-color: #263238 !important;
+  color: white !important;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+#faq a {
+  text-decoration: none;
+  color: #fff !important;
+}
+#faq span {
+  color: #db3635;
+}
+/* Error Page */
+.img-error {
+  width: 40%;
+}
+.btn-back-error {
+  background: white !important;
+  color: #db3635 !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+}
+.btn-back-error:hover {
+  background: #db3635 !important;
+  color: white !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+  transition: 0.5s;
+}
+
+/* Back to Top Button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #db3635;
+  color: #fff;
+  z-index: 9999;
+}
+@media only screen and (max-width: 767px) {
+  .img-error {
+    width: 100%;
+  }
+  header {
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .img-error {
+    width: 70%;
+  }
+  /* header {
+    background: #263238;
+  }
+  .quotes {
+    color: white;
+  }
+  .quotes2 {
+    color: whitesmoke;
+  }
+  .btn-read {
+    background: #db3635 !important;
+    color: #fff !important;
+    border: 2px solid #db3635 !important;
+    border-radius: 10px !important;
+  }
+  .btn-read:hover {
+    background: #fff !important;
+    color: #db3635 !important;
+    border: 2px solid #db3635 !important;
+    border-radius: 10px !important;
+    transition: 0.5s;
+  } */
+}

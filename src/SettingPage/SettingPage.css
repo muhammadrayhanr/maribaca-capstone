@@ -1,0 +1,14 @@
+.profile-photo {
+  width: 15rem;
+  object-fit: contain;
+}
+/* .bg-row {
+  background: #f0f0f4 !important;
+} */
+.nav-setting {
+  /* background: #f0f0f4 !important; */
+  color: black;
+}
+/* .bg-privacy {
+  background: #f0f0f4 !important;
+} */

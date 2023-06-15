@@ -1,0 +1,9 @@
+.img-genre-book {
+  height: 14rem;
+  object-fit: fill !important;
+}
+.title-genre-book {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

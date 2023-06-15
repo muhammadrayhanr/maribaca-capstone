@@ -1,0 +1,14 @@
+.btn-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #db3635 !important;
+  color: #fff !important;
+  border: 2px solid #db3635 !important;
+  z-index: 9999;
+}
+.btn-to-top:hover {
+  background-color: #fff !important;
+  color: #db3635 !important;
+  border: 2px solid #db3635 !important;
+}

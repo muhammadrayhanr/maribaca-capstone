@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap');
+/* Navbar */
+.navbar {
+  background: #263238 !important;
+}
+.brand {
+  color: #f2ad73 !important;
+  font-family: 'Poppins', sans-serif;
+}
+.brand span {
+  color: #db3635;
+}
+.list-button .btn-register {
+  background: white !important;
+  color: #db3635 !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+}
+.list-button .btn-login {
+  background: #db3635 !important;
+  color: white !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+}
+.nav-home {
+  color: white !important;
+}
+.nav-item {
+  color: white !important;
+}
+/* .nav-link .active {
+  color: #db3635 !important;
+  font-weight: 600;
+} */
+/* .user-info-small-screen {
+  color: #000 !important;
+} */
+.user-avatar {
+  max-width: 30px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+#dropdown-item-button {
+  background: transparent !important;
+  border: none !important;
+}
+.drop-btn-info:active {
+  color: black !important;
+  background: transparent !important;
+}
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
+/* @media only screen and (max-width: 991px) {
+  .navbar {
+    background: #263238;
+  }
+  .nav-link {
+    color: white !important;
+  }
+  .navbar-toggler-icon {
+    filter: invert(100%);
+  }
+} */

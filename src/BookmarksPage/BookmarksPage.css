@@ -1,0 +1,28 @@
+.img-bookmark-empty {
+  width: 25%;
+}
+.title-bookmark-empty {
+  font-size: larger;
+}
+.btn-delete-bookmark {
+  background: white !important;
+  color: #db3635 !important;
+  border: 2px solid #db3635 !important;
+  border-radius: 10px !important;
+}
+@media only screen and (max-width: 767px) {
+  .img-bookmark-empty {
+    width: 75%;
+  }
+  .title-bookmark-empty {
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .img-bookmark-empty {
+    width: 50%;
+  }
+  .title-bookmark-empty {
+    font-size: medium;
+  }
+}

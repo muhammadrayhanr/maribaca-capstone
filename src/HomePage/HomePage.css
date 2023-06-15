@@ -1,0 +1,34 @@
+/* Carousel */
+.swiper-carousel {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.swiper-pagination-bullet {
+  background: red !important;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-popular-genre {
+  filter: brightness(40%);
+  object-fit: cover;
+}
+/* Popular This Week & New Releases */
+.img-book {
+  max-height: 14rem;
+  object-fit: contain !important;
+}
+.title-book {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
