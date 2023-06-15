@@ -65,7 +65,7 @@ const Profile = () => {
   return (
     <Container>
       <Row className="mb-5 pb-5 bg-row rounded">
-        <Col md={6} className="px-5">
+        <Col md={6}>
           {preview ? (
             <figure className="text-center mt-4">
               <img src={preview} className="rounded img-fluid profile-photo" alt="Profile Photo" />
@@ -80,7 +80,7 @@ const Profile = () => {
             <Form.Control type="file" onChange={loadImage} />
           </Form.Group>
         </Col>
-        <Col md={6} className="px-5">
+        <Col md={6}>
           <Form onSubmit={updateUser}>
             <Form.Group className="mb-3 mt-3">
               <Form.Label>Nama</Form.Label>
@@ -90,7 +90,7 @@ const Profile = () => {
               <Form.Label>Email</Form.Label>
               <Form.Control type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Masukkan email" disabled />
             </Form.Group>
-            <div className="text-end mt-4 p-3">
+            <div className="text-end mt-4">
               <Button variant="dark" className="px-4" type="submit">
                 Simpan
               </Button>

@@ -10,6 +10,9 @@
   border: 2px solid #db3635 !important;
   border-radius: 10px !important;
 }
+.no-bookmark {
+  height: 60vh;
+}
 @media only screen and (max-width: 767px) {
   .img-bookmark-empty {
     width: 75%;

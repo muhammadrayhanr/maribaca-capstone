@@ -1,5 +1,5 @@
-.container-login {
-  margin: 0 70px;
+.form-login-regist {
+  width: 50% !important;
 }
 .col-vector {
   background: #f2ad73;
@@ -65,4 +65,14 @@
 
 .fixed {
   position: fixed;
+}
+@media only screen and (max-width: 767px) {
+  .form-login-regist {
+    width: 75% !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .form-login-regist {
+    width: 100% !important;
+  }
 }

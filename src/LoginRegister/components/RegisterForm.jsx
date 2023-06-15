@@ -78,7 +78,7 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="container-login">
+    <div className="container form-login-regist">
       <h1 className="fw-bold fs-1 mt-5">
         Selamat Datang di{' '}
         <NavLink to="/" className="logo text-decoration-none">

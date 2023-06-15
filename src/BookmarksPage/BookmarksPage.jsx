@@ -118,7 +118,7 @@ const BookmarksPage = () => {
       </Row>
       <Row className="mt-3 mb-5 g-3">
         {dataList.length == 0 ? (
-          <Container className="d-flex flex-column justify-content-center align-items-center">
+          <Container className="no-bookmark d-flex flex-column justify-content-center align-items-center">
             <img src={empty} alt="Bookmark still empty" className="my-5 img-fluid img-bookmark-empty" />
             <span className="fw-semibold title-bookmark-empty">Tidak ada bookmark</span>
           </Container>

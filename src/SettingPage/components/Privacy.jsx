@@ -69,8 +69,8 @@ const Privacy = () => {
   };
 
   return (
-    <Container>
-      <Form onSubmit={updateUser} className="p-5 rounded bg-privacy">
+    <Container className="container-privacy d-flex justify-content-center">
+      <Form onSubmit={updateUser} className="my-5 rounded form-privacy">
         <h2 className="mb-4">Ganti Kata Sandi</h2>
         {verifyPassword !== password ? (
           <div className="text-center py-2">
@@ -107,7 +107,7 @@ const Privacy = () => {
             </InputGroup.Text>
           </InputGroup>
         </Form.Group>
-        <div className="text-end mt-4 p-3">
+        <div className="text-end mt-4">
           <Button type="submit" variant="dark" className="px-4">
             Simpan
           </Button>

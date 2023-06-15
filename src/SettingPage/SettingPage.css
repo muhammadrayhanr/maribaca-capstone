@@ -12,3 +12,19 @@
 /* .bg-privacy {
   background: #f0f0f4 !important;
 } */
+.container-privacy {
+  height: 70vh;
+}
+.form-privacy {
+  width: 100% !important;
+}
+@media only screen and (min-width: 767px) {
+  .form-privacy {
+    width: 75% !important;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .form-privacy {
+    width: 50% !important;
+  }
+}

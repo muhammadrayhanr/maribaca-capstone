@@ -36,7 +36,7 @@ const ProgrammingRead = () => {
         </Link>
         <div className="mb-4">
           <h1 className="fs-3 fw-semibold text-center">{book.title}</h1>
-          <h2 className="text-end fs-5 fst-italic">{book.author}</h2>
+          <h2 className="text-end fs-5 mt-4 mb-5 fst-italic">{book.author}</h2>
         </div>
 
         <iframe src={book.link} className="w-100 vh-100" allow="autoplay"></iframe>

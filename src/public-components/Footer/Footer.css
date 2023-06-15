@@ -3,3 +3,8 @@ footer span {
   color: #db3635;
   font-weight: 600;
 }
+@media only screen and (max-width: 767px) {
+  footer {
+    font-size: small;
+  }
+}

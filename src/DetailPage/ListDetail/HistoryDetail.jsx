@@ -125,7 +125,7 @@ const HistoryDetail = () => {
             <Link to="/genre/mystery">
               <Button className="btn-back">Kembali</Button>
             </Link>
-            <Button onClick={handleBookmark} className="btn-bookmark me-2">
+            <Button onClick={handleBookmark} className="btn-bookmark mx-1">
               <i className="bx bx-heart"></i> Bookmark
             </Button>
             <Link to={`/genre/history/read/${book.id}`}>

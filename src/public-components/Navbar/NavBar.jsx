@@ -99,7 +99,7 @@ const NavBar = () => {
                 <>
                   <div className="user-info d-flex justify-content-end">
                     <img src={user && user.avatar} alt="avatar" className="user-avatar rounded" />
-                    <DropdownButton className="drop-btn" id="dropdown-item-button" title={user && user.name}>
+                    <DropdownButton className="drop-btn" drop="down-centered" id="dropdown-item-button" title={user && user.name}>
                       <Link to="/setting/profile" className="text-decoration-none text-black">
                         <Dropdown.Item as="button" className="drop-btn-info">
                           <i className="bx bx-cog"></i> Setting

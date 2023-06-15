@@ -5,15 +5,18 @@ import Card from 'react-bootstrap/Card';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const PopularThisWeek = () => {
+  const url = import.meta.env.VITE_URL;
+
   const [listPopularBooks] = useState([
-    { img: 'https://www.bukukita.com/babacms/displaybuku/90344_f.jpg', title: 'Gus Dur' },
-    { img: 'https://leksikabookstore.com/uploads/6359e547123ea_20221027085623-1.jpg', title: 'Bicara Itu Ada Seninya' },
-    { img: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1446023543i/27318448.jpg', title: 'Kitab Anti Bodoh' },
-    { img: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Sebuah-seni-untuk-bersikap-bodoh-amat.jpg', title: 'Sebuah Seni untuk Bersikap Bodoamat' },
-    { img: 'https://res.cloudinary.com/dsntbuotf/image/upload/v1685604275/Mystery/KucingDiTengahBurungDara_oafooi.jpg', title: 'Kucing Di Tengah Burung Dara' },
-    { img: 'https://cdn.gramedia.com/uploads/items/lgkld.jpg', title: 'Sejarah Dunia yang Disembunyikan' },
+    { img: 'https://www.bukukita.com/babacms/displaybuku/90344_f.jpg', title: 'Gus Dur', link: url + '/genre/biography/1' },
+    { img: 'https://leksikabookstore.com/uploads/6359e547123ea_20221027085623-1.jpg', title: 'Bicara Itu Ada Seninya', link: url + '/genre/self-improvement/4' },
+    { img: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1446023543i/27318448.jpg', title: 'Kitab Anti Bodoh', link: url + '/genre/self-improvement/2' },
+    { img: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Sebuah-seni-untuk-bersikap-bodoh-amat.jpg', title: 'Sebuah Seni untuk Bersikap Bodoamat', link: url + '/genre/self-improvement/1' },
+    { img: 'https://ebooks.gramedia.com/ebook-covers/47970/image_highres/ID_JMM2019MTH06JMM.jpg', title: 'Jangan Membuat Masalah Kecil Jadi Masalah Besar', link: url + '/genre/self-improvement/6' },
+    { img: 'https://cdn.gramedia.com/uploads/items/lgkld.jpg', title: 'Sejarah Dunia yang Disembunyikan', link: url + '/genre/mystery/9' },
   ]);
 
   return (
@@ -46,12 +49,14 @@ const PopularThisWeek = () => {
         >
           {listPopularBooks.map((item, index) => (
             <SwiperSlide key={index} className="swiper-slide-this-week">
-              <Card className="border-0 bg-light">
-                <Card.Img variant="top" className="img-book" src={item.img} />
-                <Card.Body className="bg-light">
-                  <Card.Text className="text-black title-book">{item.title}</Card.Text>
-                </Card.Body>
-              </Card>
+              <Link to={item.link} className="text-decoration-none">
+                <Card className="border-0 bg-light">
+                  <Card.Img variant="top" className="img-book" src={item.img} />
+                  <Card.Body className="bg-light">
+                    <Card.Text className="text-black title-book">{item.title}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
