@@ -156,7 +156,7 @@ const LoginForm = () => {
           </InputGroup>
         </div>
         <div className="mb-3 form-forget text-end">
-          <Button className="forget-password" onClick={handleShowModal}>
+          <Button className="forget-password" onClick={handleShowModal} disabled>
             Lupa kata sandi?
           </Button>
         </div>

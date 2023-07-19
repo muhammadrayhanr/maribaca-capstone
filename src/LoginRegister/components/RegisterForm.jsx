@@ -99,20 +99,20 @@ const RegisterForm = () => {
           <label htmlFor="regist_name" className="form-label">
             Nama
           </label>
-          <input type="text" minLength={5} autoComplete="off" required={true} className="form-control" id="regist_name" name="regist_name" value={name} onChange={(e) => setName(e.target.value)} />
+          <input type="text" minLength={5} autoComplete="off" required={true} className="form-control" id="regist_name" name="regist_name" value={name} onChange={(e) => setName(e.target.value)} disabled />
         </div>
         <div className="mb-3">
           <label htmlFor="regist_email" className="form-label">
             Email
           </label>
-          <input type="email" minLength={12} autoComplete="off" required={true} className="form-control" id="regist_email" name="regist_email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input type="email" minLength={12} autoComplete="off" required={true} className="form-control" id="regist_email" name="regist_email" value={email} onChange={(e) => setEmail(e.target.value)} disabled />
         </div>
         <div className="mb-3">
           <label htmlFor="regist_password" className="form-label">
             Kata Sandi
           </label>
           <InputGroup>
-            <Form.Control type={visibilityPassword} minLength={8} autoComplete="off" required={true} className="form-control" id="regist_password" name="regist_password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <Form.Control type={visibilityPassword} minLength={8} autoComplete="off" required={true} className="form-control" id="regist_password" name="regist_password" value={password} onChange={(e) => setPassword(e.target.value)} disabled />
             <InputGroup.Text onClick={leakPassword}>
               <i className={iconPassword}></i>
             </InputGroup.Text>
@@ -133,13 +133,14 @@ const RegisterForm = () => {
               name="regist_valid_password"
               value={verifyPassword}
               onChange={(e) => setVerifyPassword(e.target.value)}
+              disabled
             />
             <InputGroup.Text onClick={leakRepeatPassword}>
               <i className={iconRepeatPassword}></i>
             </InputGroup.Text>
           </InputGroup>
         </div>
-        <button type="submit" className="btn btn-register-form w-100 mt-4 fw-bold">
+        <button type="submit" className="btn btn-register-form w-100 mt-4 fw-bold" disabled>
           Daftar
         </button>
         <p className="text-regist text-center mt-3">

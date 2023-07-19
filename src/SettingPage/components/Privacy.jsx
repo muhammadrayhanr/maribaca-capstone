@@ -82,7 +82,7 @@ const Privacy = () => {
         <Form.Group className="mb-3">
           <Form.Label>Kata Sandi Baru</Form.Label>
           <InputGroup>
-            <Form.Control type={visibilityPassword} minLength={8} autoComplete="off" required={true} className="form-control" id="regist_password" name="regist_password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <Form.Control type={visibilityPassword} minLength={8} autoComplete="off" required={true} className="form-control" id="regist_password" name="regist_password" value={password} onChange={(e) => setPassword(e.target.value)} disabled />
             <InputGroup.Text onClick={leakPassword}>
               <i className={iconPassword}></i>
             </InputGroup.Text>
@@ -101,6 +101,7 @@ const Privacy = () => {
               name="regist_valid_password"
               value={verifyPassword}
               onChange={(e) => setVerifyPassword(e.target.value)}
+              disabled
             />
             <InputGroup.Text onClick={leakRepeatPassword}>
               <i className={iconRepeatPassword}></i>
@@ -108,7 +109,7 @@ const Privacy = () => {
           </InputGroup>
         </Form.Group>
         <div className="text-end mt-4">
-          <Button type="submit" variant="dark" className="px-4">
+          <Button type="submit" variant="dark" className="px-4" disabled>
             Simpan
           </Button>
         </div>
